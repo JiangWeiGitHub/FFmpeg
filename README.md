@@ -11,11 +11,12 @@ Ubuntu 14.04
 ##### Procedure:
 
 + nano /etc/apt/sources.list<p>
-`deb http://ppa.launchpad.net/mc3man/trusty-media/ubuntu trusty main`<p>
-`deb-src http://ppa.launchpad.net/mc3man/trusty-media/ubuntu trusty main`<p>
+
+        deb http://ppa.launchpad.net/mc3man/trusty-media/ubuntu trusty main
+        deb-src http://ppa.launchpad.net/mc3man/trusty-media/ubuntu trusty main
 
 + apt-get update<p>
-PS: It will show some information below:
+PS: It will show some information below:<p>
 `W: GPG error: http://ppa.launchpad.net trusty InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 90BD7EACED8E640A`<p>
 
 + apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 90BD7EACED8E640A<p>
@@ -28,3 +29,5 @@ PS: It will show some information below:
 
 + apt-get update
 + apt-get install ffmpeg
+
+##### Done
